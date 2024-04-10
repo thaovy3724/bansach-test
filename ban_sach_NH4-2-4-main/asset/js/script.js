@@ -15,16 +15,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 // check filter form
 function checkFilterForm(){
-    console.log("hello");
-  minPrice = document.getElementById("minPrice").value;
-  maxPrice = document.getElementById("maxPrice").value;
+  console.log("hello");
+  minPrice = parseInt(document.getElementById("minPrice").value);
+  maxPrice = parseInt(document.getElementById("maxPrice").value);
   
   if(isNaN(minPrice) || isNaN(maxPrice)){
     alert("vui lòng nhập số.");
     return false;
   }
 
-  if(minPrice=="" || maxPrice=="" || minPrice<=0 || maxPrice<=0 ||(pminPrice>maxPrice)){
+  if(minPrice=="" || maxPrice=="" || minPrice<=0 || maxPrice<=0 ||(minPrice>maxPrice)){
     alert("Vui lòng nhập số tiền hợp lệ");
     return false;
   }

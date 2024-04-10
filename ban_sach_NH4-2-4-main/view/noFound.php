@@ -11,9 +11,6 @@
             <div class="container-bottom-right-content">
                 <div class="container-bottom-right-content-top">
                     Kết quả tìm kiếm: 
-                    <input type="hidden" name="thingToSearchInput" value="<?=$thingToSearch?>" form="filter-form">
-                    <input type="hidden" name="thingToSearchValInput" value="<?=$thingToSearchVal?>" form="filter-form">
-                    <input type="hidden" name="title" value="<?=$title?>" form="filter-form">
                     <span id="searchResult" name=""><?=$title?></span>
                 </div>
                 <div class="container-bottom-right-content-bottom">
